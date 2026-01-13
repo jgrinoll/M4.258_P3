@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card-orador {
+    @apply flex-1 basis-card max-w-card rounded-lg overflow-hidden shadow-sm bg-white transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+  
+  .bg-gradient-warm {
+    @apply bg-gradient-to-br from-[#fff5e6] to-[#ffe4cc];
+  }
+  
+  .article-section-heading {
+    @apply font-serif text-2xl md:text-3xl text-primary font-bold mt-8 mb-4;
+  }
+}

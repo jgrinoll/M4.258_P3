@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="ca">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>PAC 3 - Cuina Catalana</title>
   </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
+  <body class="flex flex-col min-h-screen">
+    <include src="./views/header.html"></include>
+    <main class="flex-1 flex items-center justify-center bg-gradient-warm">
+      <div class="container mx-auto px-4 py-16 text-center">
+        <picture>
+          <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
+          <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="mx-auto mb-8" />
+        </picture>
+        <h1 class="text-4xl md:text-5xl font-bold text-primary mb-6">Cuina Catalana</h1>
+        <p class="text-lg text-secondary mb-8 max-w-2xl mx-auto">
+          Descobreix els secrets de la cuina catalana amb els nostres experts i llegeix articles sobre plats tradicionals.
+        </p>
+        <nav class="flex flex-col md:flex-row gap-4 justify-center">
+          <a href="./oradors.html" class="bg-primary text-white px-8 py-3 rounded-lg hover:bg-opacity-90 transition-all font-semibold">
+            Veure Oradors
+          </a>
+          <a href="./article.html" class="bg-secondary text-white px-8 py-3 rounded-lg hover:bg-opacity-90 transition-all font-semibold">
+            Llegir Article
+          </a>
+        </nav>
+      </div>
+    </main>
     <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+    <script type="module" src="./assets/scripts/main.js"></script>
   </body>
 </html>

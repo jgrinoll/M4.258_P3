@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html lang="ca">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Cuina Catalana - L'Escudella, el Ramen Català</title>
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <include src="./views/header.html"></include>
+    <main class="flex-1 bg-gray-50 py-8">
+      <article class="container mx-auto px-4 md:px-8 max-w-article bg-white rounded-lg shadow-lg my-8 p-6 md:p-12">
+        <!-- Article Header -->
+        <header class="mb-8 pb-6 border-b-4 border-primary">
+          <h1 class="font-serif text-3xl md:text-5xl font-bold text-primary mb-4 leading-tight">L'Escudella: El Ramen Català</h1>
+          <p class="text-gray-600 text-sm md:text-base">
+            <span class="font-semibold text-secondary">Per Joaquim Griñó Lladós</span> |
+            <time datetime="2025-12-01">01 de desembre de 2025</time>
+          </p>
+        </header>
+
+        <!-- Article Content -->
+        <div class="prose prose-lg max-w-none">
+          <!-- Lead Paragraph -->
+          <include src="./views/article-lead.html"></include>
+
+          <!-- Figure 1 -->
+          <figure class="my-12 text-center">
+            <picture>
+              <source srcset="./assets/images/assortit.webp" type="image/webp" />
+              <img
+                src="./assets/images/assortit.webp"
+                alt="Escudella catalana tradicional"
+                class="w-full h-auto rounded-lg shadow-md transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl"
+              />
+            </picture>
+            <figcaption class="text-sm text-gray-600 mt-3 italic">
+              Una escudella i carn d'olla tradicional catalana, amb galets i pilota
+            </figcaption>
+          </figure>
+
+          <!-- Section 1 -->
+          <section class="mb-12">
+            <h2 class="article-section-heading">Un brou amb història</h2>
+            <p class="text-base md:text-lg leading-relaxed text-gray-800 mb-4">
+              L'escudella és molt més que un simple plat de cuinar. És un testimoni
+              viu de la història de Catalunya, un plat que ha alimentat generacions de
+              famílies catalanes durant segles. Com el ramen al Japó, l'escudella
+              representa la capacitat d'una cultura per transformar ingredients humils
+              en un plat extraordinari. El seu brou, preparat amb hores de cocció
+              lenta amb carn de vedella, porc, gallina i ossos, desenvolupa una
+              profunditat de sabor que rivalitza amb qualsevol ramen japonès.
+            </p>
+            <p class="text-base md:text-lg leading-relaxed text-gray-800 mb-4">
+              La similitud més evident entre l'escudella i el ramen és el paper
+              central del brou. Ambdós plats es fonamenten en un brou ric i saborós
+              que requereix temps i dedicació per aconseguir. Mentre que el ramen
+              utilitza ossos de porc, peix i altres ingredients per crear el seu
+              característic brou, l'escudella combina diferents carns i verdures per
+              desenvolupar un sabor complex i reconfortant que és igualment addictiu.
+            </p>
+          </section>
+
+          <!-- Blockquote -->
+          <include src="./views/article-blockquote.html"></include>
+
+          <!-- Section 2 with Lists -->
+          <section class="mb-12">
+            <h2 class="article-section-heading">Els elements comuns</h2>
+            <p class="text-base md:text-lg leading-relaxed text-gray-800 mb-6">
+              Quan analitzem els components de l'escudella i el ramen, les similituds
+              són sorprenents. Ambdós plats segueixen una estructura similar que els
+              converteix en àpats complets i satisfactoris. La comparació no és
+              superficial; són plats que comparteixen una filosofia culinària comuna
+              malgrat néixer a cultures molt diferents.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-8 p-6 md:p-8 bg-gray-50 rounded-lg">
+              <div>
+                <h3 class="text-xl font-semibold text-primary mb-4">Components de l'escudella:</h3>
+                <ul class="space-y-3">
+                  <li class="flex items-start">
+                    <span class="text-primary text-lg mr-3 mt-1">▪</span>
+                    <span class="text-gray-800"><strong class="text-primary">Brou ric</strong> de carn de vedella, porc i gallina</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-primary text-lg mr-3 mt-1">▪</span>
+                    <span class="text-gray-800"><strong class="text-primary">Pasta</strong> (galets) o arròs</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-primary text-lg mr-3 mt-1">▪</span>
+                    <span class="text-gray-800"><strong class="text-primary">Verdures</strong> de temporada (api, pastanaga, nap)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-primary text-lg mr-3 mt-1">▪</span>
+                    <span class="text-gray-800"><strong class="text-primary">Carn</strong> (pilota, botifarra, cansalada)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-primary text-lg mr-3 mt-1">▪</span>
+                    <span class="text-gray-800"><strong class="text-primary">Cigrons</strong> que aporten textura</span>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-primary mb-4">Components del ramen:</h3>
+                <ul class="space-y-3">
+                  <li class="flex items-start">
+                    <span class="text-primary text-lg mr-3 mt-1">▪</span>
+                    <span class="text-gray-800"><strong class="text-primary">Brou ric</strong> de porc, peix o pollastre</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-primary text-lg mr-3 mt-1">▪</span>
+                    <span class="text-gray-800"><strong class="text-primary">Fideus</strong> de blat</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-primary text-lg mr-3 mt-1">▪</span>
+                    <span class="text-gray-800"><strong class="text-primary">Verdures</strong> (bambú, ceba tendra, nori)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-primary text-lg mr-3 mt-1">▪</span>
+                    <span class="text-gray-800"><strong class="text-primary">Carn</strong> (chashu, porc rostit)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-primary text-lg mr-3 mt-1">▪</span>
+                    <span class="text-gray-800"><strong class="text-primary">Ou</strong> marinat que aporta cremositat</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- Figure 2 -->
+          <figure class="my-12 text-center">
+            <picture>
+              <source
+                srcset="./assets/images/botifarra-amb-seques.jpg?as=webp"
+                type="image/webp"
+              />
+              <img
+                src="./assets/images/botifarra-amb-seques.jpg"
+                alt="Ingredients de l'escudella"
+                class="w-full h-auto rounded-lg shadow-md transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl"
+              />
+            </picture>
+            <figcaption class="text-sm text-gray-600 mt-3 italic">
+              Els ingredients de l'escudella mostren la riquesa de la cuina catalana
+            </figcaption>
+          </figure>
+
+          <!-- Section 3 -->
+          <section class="mb-12">
+            <h2 class="article-section-heading">Dos plats, una filosofia</h2>
+            <p class="text-base md:text-lg leading-relaxed text-gray-800 mb-4">
+              Tant l'escudella com el ramen són plats que neixen de la necessitat
+              d'aprofitar al màxim els ingredients disponibles i crear un àpat complet
+              en un sol bol. Són plats democràtics que han alimentat tant a famílies
+              humils com a la noblesa, adaptant-se als ingredients i al pressupost de
+              cada llar. Aquesta versatilitat és una de les claus del seu èxit i
+              longevitat.
+            </p>
+            <p class="text-base md:text-lg leading-relaxed text-gray-800 mb-4">
+              A més, ambdós plats tenen un important component social i ritual. El
+              ramen es menja en llocs on la gent es reuneix per compartir un
+              àpat ràpid però satisfactori. L'escudella, especialment en les seves
+              versions festives com l'escudella de Nadal, és un plat de celebració
+              familiar que reuneix diverses generacions al voltant de la taula. En
+              tots dos casos, el plat va més enllà del simple aliment: és un vehicle
+              per a la connexió humana.
+            </p>
+          </section>
+
+          <!-- Section 4 -->
+          <section class="mb-12">
+            <h2 class="article-section-heading">Un reconeixement merescut</h2>
+            <p class="text-base md:text-lg leading-relaxed text-gray-800 mb-4">
+              És hora que l'escudella rebi el reconeixement internacional que mereix.
+              Mentre que el ramen ha aconseguit conquerir el món i es troba en ciutats
+              de tots els continents, l'escudella roman com un tresor relativament
+              desconegut fora de Catalunya. No obstant això, qualsevol que provi
+              aquest plat entén immediatament la seva grandesa: un brou profund i
+              saborós, carns tendres, verdures perfectament cuites, i aquells galets
+              que absorbeixen tot el sabor del brou.
+            </p>
+            <p class="text-base md:text-lg leading-relaxed text-gray-800 mb-4">
+              L'escudella no és només el ramen català; és una obra mestra culinària
+              per dret propi que mereix ocupar un lloc d'honor en el panorama
+              gastronòmic mundial. És temps que el món descobreixi aquest plat
+              ancestral que, com el ramen, té el poder de reconfortar l'ànima i
+              alimentar el cos amb cada cullerada. La propera vegada que gaudeixis
+              d'una escudella ben feta, recorda: estàs menjant segles de tradició
+              catalana en forma líquida.
+            </p>
+          </section>
+
+          <!-- Aside / Info Box -->
+          <include src="./views/article-aside.html"></include>
+        </div>
+
+        <!-- Article Footer -->
+        <footer class="mt-12 pt-8 border-t-2 border-gray-200">
+          <div>
+            <h3 class="text-lg font-semibold text-primary mb-3">Sobre l'autor</h3>
+            <p class="text-gray-600 text-base leading-relaxed">
+              Joaquim Griñó és un apassionat de la cuina catalana tradicional i
+              investigador gastronòmic. Ha dedicat anys a estudiar els orígens i
+              l'evolució dels plats catalans més emblemàtics.
+            </p>
+          </div>
+        </footer>
+      </article>
+    </main>
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script>
+  </body>
+</html>

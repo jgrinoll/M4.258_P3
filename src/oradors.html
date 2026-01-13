@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="ca">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Cuina Catalana - Oradors</title>
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <include src="./views/header.html"></include>
+    <main class="flex-1 bg-gradient-warm py-8 md:py-12">
+      <div class="container mx-auto px-4">
+        <h1 class="text-center text-primary font-bold text-4xl md:text-5xl mb-12">Oradors</h1>
+        
+        <div class="flex flex-wrap justify-center gap-6">
+          <!-- Orador 1 -->
+          <article class="card-orador">
+            <picture>
+              <source srcset="./assets/images/orador_1.jpg?as=webp" type="image/webp" />
+              <img src="./assets/images/orador_1.jpg" class="w-full h-280 md:h-300 object-cover transition-transform duration-300 hover:scale-105" alt="Jacinta Bonnin" loading="lazy" />
+            </picture>
+            <div class="p-5">
+              <h2 class="text-xl text-primary font-semibold mb-3">Jacinta Bonnin</h2>
+              <p class="text-secondary text-base leading-relaxed">La cuina de l'empordà: secrets dels nostres guisats tradicionals i l'ús dels productes de proximitat per crear plats amb ànima.</p>
+            </div>
+          </article>
+
+          <!-- Orador 2 -->
+          <article class="card-orador">
+            <picture>
+              <source srcset="./assets/images/orador_2.jpg?as=webp" type="image/webp" />
+              <img src="./assets/images/orador_2.jpg" class="w-full h-280 md:h-300 object-cover transition-transform duration-300 hover:scale-105" alt="Albí Cornellà" loading="lazy" />
+            </picture>
+            <div class="p-5">
+              <h2 class="text-xl text-primary font-semibold mb-3">Albí Cornellà</h2>
+              <p class="text-secondary text-base leading-relaxed">Innovació en la cuina catalana: com actualitzar les receptes tradicionals sense perdre la seva essència i el sabor de sempre.</p>
+            </div>
+          </article>
+
+          <!-- Orador 3 -->
+          <article class="card-orador">
+            <picture>
+              <source srcset="./assets/images/orador_3.jpg?as=webp" type="image/webp" />
+              <img src="./assets/images/orador_3.jpg" class="w-full h-280 md:h-300 object-cover transition-transform duration-300 hover:scale-105" alt="Cecília Galimany" loading="lazy" />
+            </picture>
+            <div class="p-5">
+              <h2 class="text-xl text-primary font-semibold mb-3">Cecília Galimany</h2>
+              <p class="text-secondary text-base leading-relaxed">Del mercat a la taula: la importància de les verdures de temporada i els llegums en la dieta mediterrània catalana.</p>
+            </div>
+          </article>
+
+          <!-- Orador 4 -->
+          <article class="card-orador">
+            <picture>
+              <source srcset="./assets/images/orador_4.jpg?as=webp" type="image/webp" />
+              <img src="./assets/images/orador_4.jpg" class="w-full h-280 md:h-300 object-cover transition-transform duration-300 hover:scale-105" alt="Alfons Navines" loading="lazy" />
+            </picture>
+            <div class="p-5">
+              <h2 class="text-xl text-primary font-semibold mb-3">Alfons Navines</h2>
+              <p class="text-secondary text-base leading-relaxed">Tècniques modernes aplicades a la cuina catalana: sous-vide, baixa temperatura i gelificacions amb productes autòctons.</p>
+            </div>
+          </article>
+
+          <!-- Orador 5 -->
+          <article class="card-orador">
+            <picture>
+              <source srcset="./assets/images/orador_5.jpg?as=webp" type="image/webp" />
+              <img src="./assets/images/orador_5.jpg" class="w-full h-280 md:h-300 object-cover transition-transform duration-300 hover:scale-105" alt="Feliu Sarto" loading="lazy" />
+            </picture>
+            <div class="p-5">
+              <h2 class="text-xl text-primary font-semibold mb-3">Feliu Sarto</h2>
+              <p class="text-secondary text-base leading-relaxed">Els sofregits i els arrossos: la base de la cuina catalana explicada pas a pas per crear plats amb tot el sabor tradicional.</p>
+            </div>
+          </article>
+
+          <!-- Orador 6 -->
+          <article class="card-orador">
+            <picture>
+              <source srcset="./assets/images/orador_6.jpg?as=webp" type="image/webp" />
+              <img src="./assets/images/orador_6.jpg" class="w-full h-280 md:h-300 object-cover transition-transform duration-300 hover:scale-105" alt="Esperança Cassado" loading="lazy" />
+            </picture>
+            <div class="p-5">
+              <h2 class="text-xl text-primary font-semibold mb-3">Esperança Cassado</h2>
+              <p class="text-secondary text-base leading-relaxed">La rebosteria catalana: panellets, crema catalana i coques. Receptes ancestrals que passen de generació en generació.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script>
+  </body>
+</html>

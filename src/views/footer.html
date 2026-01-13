@@ -1,3 +1,31 @@
-<footer class="uoc-footer">
-  &copy; Universitat Oberta de Catalunya
+<footer class="bg-white shadow-md mt-auto">
+  <nav class="container mx-auto px-4 py-6">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center">
+        <a href="./index.html">
+          <picture>
+            <source srcset="./assets/images/logo.png?as=webp&width=200" type="image/webp" />
+            <img src="./assets/images/logo.png?width=200" alt="Universitat Oberta de Catalunya" class="h-12" />
+          </picture>
+        </a>
+      </div>
+      <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 text-center md:text-left">
+        <li><a href="./index.html" class="text-primary hover:text-secondary transition-colors">Pàgina principal</a></li>
+        <li><a href="./oradors.html" class="text-primary hover:text-secondary transition-colors">Oradors</a></li>
+        <li><a href="./article.html" class="text-primary hover:text-secondary transition-colors">Article</a></li>
+        <li><a href="#" class="text-primary hover:text-secondary transition-colors">Contacte</a></li>
+      </ul>
+      <div class="flex gap-4">
+        <a href="#" class="text-red-600 hover:text-red-700 transition-colors" aria-label="Google">
+          <i class="fa-brands fa-google text-xl"></i>
+        </a>
+        <a href="#" class="text-blue-600 hover:text-blue-700 transition-colors" aria-label="Facebook">
+          <i class="fa-brands fa-facebook text-xl"></i>
+        </a>
+        <a href="#" class="text-gray-900 hover:text-gray-700 transition-colors" aria-label="X (Twitter)">
+          <i class="fa-brands fa-x-twitter text-xl"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
 </footer>
